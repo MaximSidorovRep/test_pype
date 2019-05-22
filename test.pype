@@ -1,4 +1,4 @@
 node()
 {
-     print "DEBUG GIIIIIIT: parameter foo = ${env.foo}"
+     print "DEBUG GIT: parameter foo = ${foo}"
 }
