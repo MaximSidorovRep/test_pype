@@ -2,8 +2,6 @@ node(input_param)
 {
      print "DEBUG GIT: parameter foo = ${foo}"
      	stage('share database jar snapshot between nodes') {
-		dir ('database/target/') {
-			stash includes: "database.jar", name: 'db-app'
-		}
+		print "DEBUG GIT: parameter foo = ${foo}"
 	}
 }
