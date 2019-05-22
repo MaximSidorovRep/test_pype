@@ -1,4 +1,4 @@
-node(input_param)
+node()
 {
      print "DEBUG GIT: parameter foo = ${foo}"
      	stage('share database jar snapshot between nodes') {
