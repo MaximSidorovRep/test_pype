@@ -1,5 +1,5 @@
 node()
 {
-    #git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: "${list_branch}"
+    //git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: "${list_branch}"
     print "f fff.  "${list_branch}""
 }
