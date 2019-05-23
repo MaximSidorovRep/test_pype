@@ -1,7 +1,7 @@
 node()
 {
-    //git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: "${list_branch}"
-    def test_val = "${list_branch}"
-    print '$test_val'
-    print "f fff.  ${list_branch}"
+    git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git'
+    //def test_val = "${list_branch}"
+    //print '$test_val'
+    //print "f fff.  ${list_branch}"
 }
