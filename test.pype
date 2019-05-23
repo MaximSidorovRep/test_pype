@@ -4,4 +4,12 @@ node()
      	stage('share database jar snapshot between nodes') {
 		print "DEBUG GIT: parameter foo = ${foo}"
 	}
+	
+     stage("\u2753 Deploy to PROD?"){
+     prodApprove = input(
+        message: 'Ready to go LIVE!?', submitterParameter: 'approved_by', parameters: [
+        [$class: 'TextParameterDefinition', defaultValue: "NO", description: 'Please type YES to approve', name: 'prod_appr']
+        ])
+
+	print prodApprove
 }
