@@ -18,7 +18,7 @@ node()
 	   currentBuild.result = 'ABORTED'
 	   error ("Build was aborted")
     }
-    git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git'
+    git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: 'feature/test'
     input 'Ready to go?'
 }
 }
