@@ -1,5 +1,6 @@
 node()
 {
+    print "${params.lablee#*/}"
     git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git'//, branch: "${params.lablee##origin/}"
     //def test_val = "${list_branch}"
     //print '$test_val'
