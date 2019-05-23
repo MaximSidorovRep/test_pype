@@ -1,24 +1,4 @@
 node()
 {
-     print "DEBUG GIT: parameter foo = ${foo}"
-    stage('share database jar snapshot between nodes') {
-		print "DEBUG GIT: parameter foo = ${foo}"
-	}
-	
-    stage("\u2753 Deploy to PROD?"){
-     prodApprove = input(
-        message: 'Ready to go LIVE!?', submitterParameter: 'approved_by', parameters: [
-        [$class: 'TextParameterDefinition', defaultValue: "NO", description: 'Please type YES to approve', name: 'prod_appr']
-        ])
-
-	print prodApprove
-
-
-	if (prodApprove.prod_appr != "YES") {
-	   currentBuild.result = 'ABORTED'
-	   error ("Build was aborted")
-    }
     git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: 'feature/test'
-    input 'Ready to go?'
-}
 }
