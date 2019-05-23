@@ -1,7 +1,7 @@
 node()
 {
-    def vara = "${params.lablee}"
-    git_branch_local=$(echo $vara   | sed -e "s|origin/||g")
+    def vara = "${params.lablee}".replace("origin/","")
+    
     print "Teeeest ${vara#*/}"
     print "${params.lablee}"
     git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git'//, branch: "${params.lablee##origin/}"
