@@ -1,6 +1,6 @@
 node()
 {
-    //def vara = "${params.lablee}".replace("origin/","")
+    def vara = "${params.lablee}".replace("origin/","")
     
     print "Teeeest ${vara}"
     print "${params.lablee}"
