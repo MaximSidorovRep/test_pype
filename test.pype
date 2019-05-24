@@ -11,8 +11,9 @@ node()
     //print "f fff.  ${list_branch}"
     
    stage ("Set git tags and generate changes logs") {
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '9589ce50-fa95-45fd-a31f-6195364edb67', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
-            sh("git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/MaximSidorovRep/pre_work.git")
+        #withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '9589ce50-fa95-45fd-a31f-6195364edb67', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
+        #    sh("git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/MaximSidorovRep/pre_work.git")
+        git url: 'https://github.com/MaximSidorovRep/pre_work.git', credentialsId: '9589ce50-fa95-45fd-a31f-6195364edb67'
         }
     }
     
