@@ -4,7 +4,8 @@ node()
     
     print "Teeeest ${vara}"
     print "${params.lablee}"
-    git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: "${vara}"
+    //git url: 'https://github.com/MaximSidorovRep/proc_node_exporter.git', branch: "${vara}"
+    git url: 'https://github.com/MaximSidorovRep/pre_work.git'
     //def test_val = "${list_branch}"
     //print '$test_val'
     //print "f fff.  ${list_branch}"
